@@ -1,0 +1,115 @@
+body{
+    background: linear-gradient(to bottom right, #40AAD7,#40D7C6);
+    width: 100vw; /* Establece el ancho del cuerpo al ancho completo de la ventana */
+    height: 100vh /* Establece la altura del cuerpo a la altura completa de la ventana */
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0px auto;
+    font-size: 25px;
+}
+
+main label,input{
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+label{
+    padding: 20px;
+}
+
+input{
+    width:300px;
+    padding: 5px
+}
+
+.Calcular{
+    background-color: rgba(27, 103, 233, 0.797);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: block;
+    margin: 15px auto;
+}
+
+.Calcular:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 30ms;
+}
+
+.contenedorTabla{
+    width: 940px;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+li{
+    margin-bottom: 7px;
+}
+
+.regreso{
+    background-color: rgba(0, 123, 255, 0.507);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    left:800px;
+    cursor: pointer;
+}
+
+.regreso a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+@media screen and (max-width:480px) {
+    header{
+        width: calc(100% - 45px);
+        height: 100px;
+        margin: 0px auto;
+        padding: 10px;
+        display:block;
+    }
+
+    main{
+        width: 100%;
+    }
+        
+    .boton{
+        width: 100%;
+    }
+
+    .Calcular{
+        margin: 15px auto;
+        position: static;
+        display:block;
+        font-size: 12px;
+    }
+
+    .contenedorTabla{
+        width: auto;
+        display: block;
+        margin: 0px auto;
+    }
+
+    .regreso{
+        position: static;
+        margin: 0px auto;
+    }
+}

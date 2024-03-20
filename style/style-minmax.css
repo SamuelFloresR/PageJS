@@ -1,0 +1,135 @@
+body{
+    background: linear-gradient(to bottom right, #40AAD7,#40D7C6);
+    width: 100vw; /* Establece el ancho del cuerpo al ancho completo de la ventana */
+    height: 100vh /* Establece la altura del cuerpo a la altura completa de la ventana */
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0px auto;
+}
+
+.Data{
+    width: 940px;
+    display: inline-block;
+}
+
+.Data label,input{
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+label{
+    padding: 20px;
+    font-size: 25px;
+}
+
+#numero{
+    display: inline-block;
+    margin-left: 250px;
+    width:300px;
+    padding: 5px
+}
+
+.reset{
+    background-color: rgba(148, 50, 50, 0.684);
+    border: none;
+    border-radius: 15px;
+    margin: 5px;
+    color:white;
+    cursor: pointer;
+}
+.Calcular{
+    background-color: rgba(27, 103, 233, 0.797);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 15px 10px;
+    position: relative;
+    left: 280px;
+}
+
+.Calcular:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 30ms;
+}
+
+p{
+    width: 940px;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.regreso a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.regreso{
+    background-color: rgba(0, 123, 255, 0.507);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    left:800px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    header{
+        width: calc(100% - 45px);
+        height: 100px;
+        margin: 0px auto;
+        padding: 10px;
+    }
+
+    main, .Data{
+        width: 100%;
+    }
+
+    #numero{
+        width: 250px;
+        margin-left: 25px;
+    }
+
+    .botones{
+        width: 100%;
+        text-align: center;
+        margin: 5px  auto;
+    }
+
+    .Calcular{
+        position: static;
+        display:inline-block;
+        font-size: 12px;
+    }
+
+    p{
+        width: auto;
+        padding: 0px;
+    }
+
+    #Resultado{
+        margin: 10px;
+    }
+
+    .regreso{
+        position: static;
+        margin: 15px auto;
+    }
+}

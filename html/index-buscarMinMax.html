@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar valores</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style-minmax.css">
+</head>
+<body>
+    <header>
+        <h1>Busca menor y mayor numero</h1>
+    </header>
+    <main>
+        <div class="Data">
+            <input type="number" id="numero" placeholder="Añade valores a la lista">
+            <button class="reset" onclick="resetear();">Resetear</button>
+        </div>
+        <div class="botones">
+            <button class="Calcular" onclick="anadirValor();">Ingresa valores a la lista</button>
+            <button class="Calcular" onclick="resultado();">Busca el valores</button>
+        </div>
+        <p>La lista de valores es: <span id="listaValores"></span></p>
+        <p id="Resultado"></p>
+    </main>
+    <button class="regreso"><a href="../index.html">Regresa a la pagina principal</a></button>
+    <script src="../js/funciones-generales.js"></script>
+    <script src="../js/buscar-minmax.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #40AAD7, #40D7C6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    font-size: 35px;
+    margin: 20px;
+    color: #fff;
+}
+
+main {
+    width: 80%;
+    max-width: 940px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.Data, .botones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Data input[type="number"] {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.reset, .Calcular {
+    background-color: rgba(27, 103, 233, 0.797);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.reset:hover, .Calcular:hover {
+    background-color: rgba(27, 103, 233, 1);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.regreso a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+}
+
+.regreso {
+    background-color: rgba(0, 123, 255, 0.507);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .Data, .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Data input[type="number"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .reset, .Calcular {
+        margin-left: 0;
+        margin-top: 10px;
+    }}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista alrevez</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style-listaArevez.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Genera tu lista alrevez
+        </h1>
+    </header>
+    <main>
+        <div class="Data">
+            <label for="texto">Ingresa datos a la lista</label>
+            <input type="text" id="texto">
+            <button class="reset" onclick="resetear();">Reset</button>
+        </div>
+        <div class="muestraListas">
+            <p>Los valores de la lista son: <span id="ListaHTML"></span></p>
+            <p>La lista volteada es: <span id="ListaAlrevez"></span></p>
+        </div>
+        <div class="botones">
+            <button class="Calcular" onclick="anadirValor();">Añadir</button>
+            <button class="Calcular" onclick="mostrarAlrevez();">Voltear lista</button>
+        </div>
+
+    </main>
+    <button class="regreso"><a href="../index.html">Regresa a la pagina principal</a></button>
+
+    <script src="../js/lista-alrevez.js"></script>
+    <script src="../js/funciones-generales.js"></script>
+</body>
+</html>

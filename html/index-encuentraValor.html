@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra el valor en la lista </title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style-encuentraValor.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Encuentra el valor dentro de tu propia lista
+        </h1>
+    </header>
+    <main>
+        <div class="Data">
+            <input type="number" id="numero" placeholder="Añade valores a la lista">
+            <button class="reset" onclick="resetear();">Resetear</button>
+        </div>
+
+        <div class="botones">
+            <button class="Calcular" onclick="anadirValor();">Añadir valor en la lista</button>
+            <button class="Calcular" onclick="resultado();">Buscar en la lista</button>
+        </div>
+        <p>La lista de valores es: <span id="listaValores"></span></p>
+        <p id="Resultado"></p>
+        <button class="regreso" ><a href="../index.html">Regresa a la pagina principal</a></button>
+    </main>
+    <script src="../js/funciones-generales.js"></script>
+    <script src="../js/encuentravalor.js"></script>
+</body>
+</html>

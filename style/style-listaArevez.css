@@ -1,0 +1,156 @@
+body{
+    background: linear-gradient(to bottom right, #40AAD7,#40D7C6);
+    width: 100vw; /* Establece el ancho del cuerpo al ancho completo de la ventana */
+    height: 100vh /* Establece la altura del cuerpo a la altura completa de la ventana */
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0px auto;
+    font-size: 25px;
+}
+
+.Data{
+    width: 940px;
+    margin: 0px auto;
+}
+
+Data label,input{
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+
+label{
+    padding: 20px;
+}
+
+#texto{
+    display:block;
+    margin:0px auto;
+    width:300px;
+    padding: 5px
+}
+
+.reset{
+    position: absolute;
+    right: 380px;
+    top: 90px;
+    background-color: rgba(148, 50, 50, 0.684);
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 10px;
+    color:white;
+    cursor: pointer;
+}
+
+.muestraListas{
+    margin: 30px;
+}
+
+.botones{
+    width: 940px;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Calcular{
+    background-color: rgba(27, 103, 233, 0.797);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 15px 20px;
+}
+
+.Calcular:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 30ms;
+}
+
+.regreso a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.regreso{
+    background-color: rgba(0, 123, 255, 0.507);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    left:800px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    header{
+        width: calc(100% - 45px);
+        height: 100px;
+        margin: 0px auto;
+        padding: 10px;
+        display:block;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .Data{
+        width: auto;
+    }
+
+    #texto{
+        position: absolute;
+        width: 250px;
+        left: 14px;
+    }
+
+    .reset{
+        position: absolute;
+        left: 280px;
+        top: 135px;
+        width: 50px;
+    }
+
+    .muestraListas p{
+        margin: 10px;
+        margin-top: 30px;
+    }
+
+    #ListaHTML,#ListaAlrevez{
+        text-align: center;
+        display: block;
+    }
+
+    .Calcular{
+        position: static;
+        display:inline-block;
+        font-size: 12px;
+    }
+    
+    .botones{
+        display: block;
+        width: auto;
+        margin: 5px  auto;
+    }
+
+    .regreso{
+        position: static;
+        margin: 0px auto;
+    }
+}

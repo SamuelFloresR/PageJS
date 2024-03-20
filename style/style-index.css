@@ -1,0 +1,84 @@
+body{
+    background: linear-gradient(to bottom right, #40AAD7,#40D7C6);
+    width: 100vw; /* Establece el ancho del cuerpo al ancho completo de la ventana */
+    height: 100vh /* Establece la altura del cuerpo a la altura completa de la ventana */
+}
+
+header{
+    width: 940px;
+    margin: 20px auto;
+    height: 310px;
+}
+
+header img{
+    border-radius: 15%;
+    position: relative;
+    left: 460px;
+    top:-60px
+}
+
+.Titulo-principal{
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top:110px;
+}
+
+nav ul {
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li{
+    margin: 15px;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: 1s;
+    background-color: #007bff;
+}
+
+.Desafio{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav ul li:hover{
+    background: linear-gradient(to bottom right, #40AAD7,#40D7C6);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:480px){
+    header{
+        width: calc(100% - 45px);
+        height: 20%;
+        margin: 10px auto;
+    }
+
+    .Titulo-principal{
+        width: 100%;
+        font-size: 5vw;
+        position: static;
+    }
+
+    header img{
+        display: block;
+        position: static;
+        width: 80%;
+        margin: 10px auto;
+
+    }
+
+    nav{
+        margin: 60px auto;
+    }
+
+    nav ul li{
+        display: inline-block;
+        width: 100px;
+        margin: 20px auto;
+        font-size: 10px;
+    }
+}

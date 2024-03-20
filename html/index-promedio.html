@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="..//style/style-promedio.css">
+
+</head>
+<body>
+    <header>
+        <h1>
+            Calculador de promedios
+        </h1>
+    </header>
+    <main>
+        <div class="Data">
+            <input type="number" id="numero" placeholder="Añade valores a la lista">
+            <button class="reset" onclick="resetear();">Resetear lista</button>
+        </div>
+        <div class="botones" >
+            <button class="Calcular" onclick="anadirValor();">Añade e valor</button>
+            <button class="Calcular" onclick="promedio();"> Calcular</button>
+        </div>
+       
+        <p>La lista de valores es: <span id="listaValores"></span></p>
+        <p id="Resultado"></p>
+    </main>
+    <button class="regreso"><a href="../index.html">Regresa a la pagina principal</a></button>
+
+    <script src="../js/funciones-generales.js"></script>
+    <script src="../js/promedio.js"></script>
+</body>
+</html>
