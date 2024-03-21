@@ -6,6 +6,7 @@
     <title>Lista alrevez</title>
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style-listaArevez.css">
+    <script src="../js/funcionesGenerales.js"></script>
 </head>
 <body>
     <header>
@@ -17,18 +18,19 @@
         <div class="Data">
             <label for="texto">Ingresa datos a la lista</label>
             <input type="text" id="texto">
-            <button class="reset" >Reset</button>
+            <button onclick="reset();" class="reset" >Reset</button>
         </div>
         <div class="muestraListas">
             <p>Los valores de la lista son: <span id="ListaHTML"></span></p>
             <p>La lista volteada es: <span id="ListaAlrevez"></span></p>
         </div>
         <div class="botones">
-            <button class="Calcular" >Añadir</button>
-            <button class="Calcular" >Voltear lista</button>
+            <button id="anadir" class="Calcular" >Añadir</button>
+            <button id="voltear" class="Calcular" >Voltear lista</button>
         </div>
         
-    <button class="regreso"><a href="../index.html">Regresa a la pagina principal</a></button>
-    </main>
+    <button class="regreso"><a href="../index.html">Regresa a la pagina principal</a></button>    
+</main>
+    <script src="../js/lista.js"></script>
 </body>
 </html>
