@@ -12,12 +12,12 @@
         <h1>Convierte soles a dolares y viceversa </h1>
     </header>
     <main>
-        <form action="">
+        <form>
             <label for="monto">Ingrese el monto a convertir</label>
             <input type="number" id="monto" placeholder="Puede ser soles o dolares">
             
-            <button class="Calcular">Convertir soles a dolares</button>
-            <button class="Calcular">Convertir dolares a soles</button>
+            <button onclick="SolesDolares(event);" class="Calcular">Convertir soles a dolares</button>
+            <button onclick="dolaresSoles(event);" class="Calcular">Convertir dolares a soles</button>
         </form>
         
         
@@ -26,5 +26,6 @@
 
         <button class="regreso"><a href="../index.html">Regresa a la pagina principal</a></button>
     </main>
+    <script src="../js/convertir.js"></script>
 </body>
 </html>
