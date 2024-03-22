@@ -6,6 +6,7 @@
     <title>Buscar valores</title>
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style-minmax.css">
+    <script src="../js/funcionesGenerales.js"></script>
 </head>
 <body>
     <header>
@@ -17,12 +18,13 @@
             <button class="reset" >Resetear</button>
         </div>
         <div class="botones">
-            <button class="Calcular" >Ingresa valores a la lista</button>
-            <button class="Calcular" >Busca el valores</button>
+            <button id="anadir" class="Calcular" >Ingresa valores a la lista</button>
+            <button id="buscar" class="Calcular" >Busca el valores</button>
         </div>
         <p>La lista de valores es: <span id="listaValores"></span></p>
         <p id="Resultado"></p>
     </main>
     <button class="regreso"><a href="../index.html">Regresa a la pagina principal</a></button>
+    <script src="../js/buscar.js"></script>
 </body>
 </html>
